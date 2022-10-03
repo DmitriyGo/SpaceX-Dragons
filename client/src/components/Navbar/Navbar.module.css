@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.4;
+    font: 14px/28px D-DIN-Bold,Arial,Verdana,sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navbarInner{
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+}
+.navbarLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbarLinkImg{
+    height: 42px;
+}

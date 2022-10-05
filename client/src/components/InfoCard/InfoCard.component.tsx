@@ -9,11 +9,12 @@ export type InfoCardProps = {
 const InfoCard: FC<InfoCardProps> = ({value,description}) => {
     return (
         <div className={cl.aBox}>
+
+            <div className={cl.textContainer}>
+               {description}
+            </div>
             <div className={cl.valueContainer}>
                 {value}
-            </div>
-            <div className={cl.textContainer}>
-                <h3 className={cl.textTitle}>{description}</h3>
             </div>
         </div>
     );

@@ -1,5 +1,6 @@
 const Router = require('express').Router;
 const userController = require('../controllers/user.controller')
+const favouriteController = require('../controllers/favourite.controller')
 
 const router = new Router();
 
@@ -16,5 +17,8 @@ router.get('/activate/:link', userController.activate)
 router.get('/refresh', userController.refresh)
 
 router.get('/users', authMiddleware, userController.getUsers)
+
+router.get('/favourites', favouriteController.getAll)
+router.get('/favourite', favouriteController.toggle)
 
 module.exports = router;

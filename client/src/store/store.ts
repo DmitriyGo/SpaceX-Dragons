@@ -1,7 +1,7 @@
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
 import dragonReducer from './reducers/DragonSlice'
 import authReducer from './reducers/AuthSlice'
-import likedPostsReducer from './reducers/LikedPostsSlice'
+import likedPostsReducer from './reducers/FavouriteSlice'
 
 const rootReducer = combineReducers({
     dragonReducer,

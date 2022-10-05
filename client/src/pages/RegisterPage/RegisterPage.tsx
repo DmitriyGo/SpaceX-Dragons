@@ -17,8 +17,7 @@ const RegisterPage: FC = () => {
     const dispatch = useAppDispatch();
     const [showPassword, setShowPassword] = useState(false)
     const schema = yup.object().shape({
-        email: yup.string().email().required(),
-        password: yup.string().min(6).max(32).required(),
+        email: yup.string().email().required(), password: yup.string().min(6).max(32).required(),
     });
 
     const {register: registerForm, handleSubmit, formState: {errors}} = useForm<FormValues>({
@@ -62,8 +61,9 @@ const RegisterPage: FC = () => {
                     <p className={cl.error}>{errorHandler(errors.email?.type)}</p>
                 </div>
                 <div className={cl.formItem}>
-                    <input className={cl.input} type={showPassword ? 'text' : 'password' } placeholder="Password" {...registerForm("password")}
-                           />
+                    <input className={cl.input} type={showPassword ? 'text' : 'password'}
+                           placeholder="Password" {...registerForm("password")}
+                    />
                     <button className={cl.passBtn} onClick={passBtnHandler}>Show password</button>
                     <p className={cl.error}>{errorHandler(errors.password?.type)}</p>
                 </div>

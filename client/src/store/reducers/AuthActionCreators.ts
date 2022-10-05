@@ -9,7 +9,6 @@ export const register = createAsyncThunk(
     async ({email, password} : {email: string, password: string}, {rejectWithValue}) => {
         try {
             const response = await AuthorizationService.registration(email, password);
-            console.log(response)
             localStorage.setItem('token', response.data.accessToken);
             return response.data.user;
         } catch (e) {

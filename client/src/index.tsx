@@ -17,10 +17,10 @@ const store = setupStore();
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLDivElement);
 
-root.render(<React.StrictMode>
+root.render(
     <BrowserRouter>
         <Provider store={store}>
             <AppRoute/>
         </Provider>
     </BrowserRouter>
-</React.StrictMode>);
+);

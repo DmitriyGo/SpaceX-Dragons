@@ -65,7 +65,8 @@ const LoginPage: FC = () => {
                     <p className={cl.error}>{errorHandler(errors.email?.type)}</p>
                 </div>
                 <div className={cl.formItem}>
-                    <input className={cl.input} type={showPassword ? 'text' : 'password' } placeholder="Password" {...register("password")}
+                    <input className={cl.input} type={showPassword ? 'text' : 'password'}
+                           placeholder="Password" {...register("password")}
                     />
                     <button className={cl.passBtn} onClick={passBtnHandler}>Show password</button>
                     <p className={cl.error}>{errorHandler(errors.password?.type)}</p>
@@ -90,7 +91,7 @@ const LoginPage: FC = () => {
             wrapperClass=""
             visible={true}
         />
-    </div> )
+    </div>)
 
 };
 export default LoginPage;

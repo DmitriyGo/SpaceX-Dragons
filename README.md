@@ -37,7 +37,7 @@ CLIENT_URL=http://localhost:3000
 
 # Application launch
 **Server start**
-To do this, write the following in the terminal
+>To do this, write the following in the terminal
 ```
 cd server
 npm i
@@ -45,7 +45,7 @@ node index
 ```
 
 **Client start**
-To do this, write the following in new terminal
+>To do this, write the following in new terminal
 ```
 cd client
 npm i

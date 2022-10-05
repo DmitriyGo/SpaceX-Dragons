@@ -49,3 +49,43 @@ span{
 .main{
     min-height: calc(100vh - 67px);
 }
+
+
+@media (max-width: 575.98px){
+    .footerInnerLink, span {
+        font-size: 10px;
+        letter-spacing: 0.15em;
+        padding: 6px 10px;
+    }
+}
+@media (min-width: 575.98px){
+    .footerInnerLink, span {
+        font-size: 12px;
+        letter-spacing: 0.15em;
+        padding: 6px 12px;
+    }
+}
+
+@media (min-width: 767.98px){
+    .footerInnerLink, span {
+        font-size: 14px;
+        letter-spacing: 0.15em;
+        padding: 10px 14px;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .footerInnerLink, span {
+        font-size: 16px;
+        letter-spacing: 0.15em;
+        padding: 14px;
+    }
+}
+
+@media (min-width: 1199.98px){
+    .footerInnerLink, span {
+        font-size: 18px;
+        letter-spacing: 0.15em;
+        padding: 20px;
+    }
+}

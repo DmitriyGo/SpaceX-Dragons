@@ -45,8 +45,6 @@ const Slider: FC<SliderProps> = ({sliderData}) => {
         e.stopPropagation();
         dispatch(toggle({url: img}))
 
-        console.log(posts)
-        console.log(img)
         if(posts.filter(x => x.url == img).length){
             toast.error(`Picture ${slideIndex} removed from favorites`, {
                 position: "top-right",

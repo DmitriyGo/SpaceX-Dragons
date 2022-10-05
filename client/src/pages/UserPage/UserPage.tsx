@@ -26,7 +26,6 @@ const UserPage = () => {
 
     const handleObserver = useCallback((entries: any) => {
 
-        console.log(entries)
         const target = entries[0];
         if (target.isIntersecting) {
             setPage((prev) => prev + 1);
